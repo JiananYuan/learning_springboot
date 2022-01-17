@@ -1,5 +1,6 @@
 package com.example.learnspb.controller;
 
+import com.example.learnspb.bean.Demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,8 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @RequestMapping("/")
-    public String hello() {
-        return "hello springboot!";
+    public Demo hello() {
+        Demo demo = new Demo();
+        demo.setId(1);
+        demo.setName("Jack");
+        return demo;
     }
 
 }
