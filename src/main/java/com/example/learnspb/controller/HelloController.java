@@ -15,4 +15,9 @@ public class HelloController {
         return demo;
     }
 
+    @RequestMapping("divide")
+    public int zeroException() {
+        return 5 / 0;
+    }
+
 }
