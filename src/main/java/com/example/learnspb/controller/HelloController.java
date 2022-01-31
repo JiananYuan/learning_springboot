@@ -36,4 +36,9 @@ public class HelloController {
         return "the data has been saved!!";
     }
 
+    @RequestMapping("2022")
+    public String greet() {
+        return "新年好! ";
+    }
+
 }
